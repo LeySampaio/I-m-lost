@@ -199,3 +199,34 @@ body {
     grid-column: 2 / 4;
   }
 }
+
+.video {
+  grid-column: 2 / 4;
+  margin-left: 10rem;
+  margin-top: 10rem;
+}
+
+.titulo-video {
+  font-size: 3rem;
+  text-align: center;
+  grid-column: 1 / 5;
+  background: #000000;
+  color: #969696;
+  padding: 20px;
+  margin-bottom: -6rem;
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+  .titulo-video {
+    font-size: 1.4rem;
+  }
+  .video {
+    display: flex;
+    margin: 0;
+    margin-top: 120px;
+    margin-bottom: -50px;
+    justify-content: center;
+    align-items: center;
+  }
+}
