@@ -224,6 +224,7 @@ body {
   .video {
     display: flex;
     margin: 0;
+    max-width: 90vh;
     margin-top: 120px;
     margin-bottom: -50px;
     justify-content: center;
