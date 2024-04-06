@@ -32,19 +32,19 @@ body {
   color: #969696;
 }
 
-.container {
+.card {
   grid-column: 1 / 5;
   text-align: center;
   margin-top: 100px;
 }
 
-.container img {
-  max-width: 280px;
+.card img {
+  max-width: 100%;
 }
 
 /* efeito na img */
 
-.container {
+.card {
   position: relative;
   overflow: hidden;
 }
@@ -61,7 +61,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(40px);
   z-index: -1;
 }
 
@@ -75,14 +75,13 @@ body {
 
 /* efeito na img */
 
-.music {
+.card {
   grid-column: 1 / 5;
   margin-top: 1rem;
   text-align: center;
-  padding: 20px;
 }
 
-.music p {
+.card p {
   font-size: 3rem;
   font-style: italic;
   color: #969696;
@@ -173,4 +172,42 @@ body {
     height: 100%;
     overflow: auto; 
   }
+}
+
+.card {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(255, 251, 251, 0.1);
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+
+.music {
+  padding: 5px;
 }
