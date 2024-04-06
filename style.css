@@ -196,7 +196,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .footer {
-    grid-column: 2 / 4;
+    grid-column: 2 / 5;
   }
 }
 
